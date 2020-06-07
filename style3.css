@@ -77,48 +77,26 @@ input:checked + .slider:before {
   color: white;
 }
 
-input{
-	outline: none;
-	box-sizing: border-box;
-	height: 60px;
-	width: 50px;
-	padding: 0 20px;
-	color: black;
-	border-radius: 50px;
-	font-size: 20px;
-	border: 1px solid #D50000;
-	transition: all .7s ease; 
+input[type=text] 
+{
+	top: 20%;
+	left:50%;
+	  width: 130px;
+	  box-sizing: border-box;
+	  border: 2px solid #ccc;
+	  border-radius: 40px;
+	  font-size: 16px;
+	  background-color: white;
+	  background-image: url('searchicon.png');
+	 
+	  background-repeat: no-repeat;
+	  padding: 12px 20px 12px 40px;
+	  -webkit-transition: width 0.4s ease-in-out;
+	  transition: width 0.4s ease-in-out;
 }
-::placeholder{
-	color: grey;
-}
-.btn{
-	position: absolute;
-	right: 0px;
-    top: 0px;
-	width: 80px;
-	height: 80px;
-	background: #D50000;
-	line-height: 80px;
-	border-radius: 50%;
-	text-align: center;
-	cursor: pointer;
-	transition: .5s;
-}
-.btn i{
-	font-size: 25px;
-	color: white;
-	line-height: 80px;
-	transition: all .7s ease;
-}
-.container:hover input{
-	width: 350px;
-}
-.container:hover i{
-	transform: rotate(-360deg);
-}
-.btn:hover{
-	background: #cc0000;
+
+input[type=text]:focus {
+  width: 100%;
 }
 para-1
 {
