@@ -1,0 +1,32 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background:#2f3640; 
+}
+
+input
+{
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	width: 130px;
+	
+	
+
+	font-size: 16px;
+	transform: translate(-50%,-50%);
+	background: #dcdde1;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+	
+	
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+input:focus 
+{
+ 	width: 50%;
+}
+
