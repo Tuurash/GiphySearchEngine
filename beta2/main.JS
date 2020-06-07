@@ -14,6 +14,7 @@ function getinput()
 
 	var text=document.getElementById("inputtext").value;
 	console.log(text);
+	document.getElementById("demo").innerHTML = text;
 
 	
 
@@ -45,6 +46,6 @@ function giphy()
 			var response=JSON.parse(data);
 			console.log(response);
 			
-			document.getElementById("demo").innerHTML = response;
+			document.getElementById("demo1").innerHTML = response;
 		});
 }
