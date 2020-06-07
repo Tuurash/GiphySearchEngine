@@ -46,6 +46,17 @@ function giphy()
 			var response=JSON.parse(data);
 			console.log(response);
 			
-			document.getElementById("demo1").innerHTML = response;
+			
+			var imageUrls = response.data;
+
+			imageUrls.forEach(function(image){
+
+			var src = image.images.fixed_height.url;
+			console.log(src);
+
+			var container = document.querySelector(".searchresult");
+			container.innerHTML += "<img src=\"" + src + "\">";
+
+  });
 		});
 }
