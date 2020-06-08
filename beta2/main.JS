@@ -14,7 +14,7 @@ function getinput()
 
 	var text=document.getElementById("inputtext").value;
 	console.log(text);
-	document.getElementById("demo").innerHTML = text;
+	document.getElementById("demo").innerHTML ="Result Showing For:"+text;
 
 	
 
@@ -54,8 +54,8 @@ function giphy()
 			var src = image.images.fixed_height.url;
 			console.log(src);
 
-			var container = document.querySelector(".searchresult");
-			container.innerHTML += "<img src=\"" + src + "\">";
+			var container = document.querySelector(".row");
+			container.innerHTML += "<img src=\"" + src + "\" class=\"img\">";
 
   });
 		});
