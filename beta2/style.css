@@ -2,6 +2,7 @@ body{
   margin: 0;
   padding: 0;
   background: white;
+  background-image: url("day.jpg");
 }
 .sbody {
   margin: 0;
@@ -69,6 +70,7 @@ input:checked + .slider:before {
 }.dark-mode {
   background-color: black;
   color: white;
+  background-image: url("night.jpg");
 }
 
 input {
@@ -124,7 +126,7 @@ div {
   text-align: center;
   padding: 32px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 30px;
 
 }
 .searchresult{

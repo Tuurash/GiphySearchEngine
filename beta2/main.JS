@@ -1,6 +1,8 @@
-var url="http://api.giphy.com/v1/gifs/search?q=cat&api_key=P4w0NzDB3U61uwvGa0dx4K51Rk2VdJEZ";
+//var url="http://api.giphy.com/v1/gifs/search?q=cat&api_key=P4w0NzDB3U61uwvGa0dx4K51Rk2VdJEZ";
 
 
+var text=document.getElementById("inputtext").value;
+var url="http://api.giphy.com/v1/gifs/search?q="+text+"&api_key=P4w0NzDB3U61uwvGa0dx4K51Rk2VdJEZ";
 
 function dark() 
 {
@@ -15,6 +17,7 @@ function getinput()
 	var text=document.getElementById("inputtext").value;
 	console.log(text);
 	document.getElementById("demo").innerHTML ="Result Showing For:"+text;
+
 
 	
 
@@ -35,6 +38,8 @@ document.getElementById("inputtext").addEventListener('keyup',
 
 function giphy()
 {
+	
+	getinput();
 	var GiphyAjaxCall=new XMLHttpRequest();
 	GiphyAjaxCall.open('GET',url);
 	GiphyAjaxCall.send();
