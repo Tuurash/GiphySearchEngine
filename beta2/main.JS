@@ -38,7 +38,7 @@ document.getElementById("inputtext").addEventListener('keyup',
 
 function giphy()
 {
-	
+
 	getinput();
 	var GiphyAjaxCall=new XMLHttpRequest();
 	GiphyAjaxCall.open('GET',url);
@@ -65,3 +65,11 @@ function giphy()
   });
 		});
 }
+
+document.getElementById("inputtext").addEventListener('onclick',
+	function()
+	{
+		window.stop();
+		location.reload(); 
+		document.getElementById("inputtext").value="";
+	});
