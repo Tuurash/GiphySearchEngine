@@ -3,26 +3,41 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Week2</title>
-		<link rel="stylesheet"  href="style3.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="stylesheet"  href="style.css">
+		
 	</head>
 	<body>
 
-	<label class="switch">
-  		<input type="checkbox" onclick="dark()">
-  		<span class="slider round"></span>
-	</label>
-	<div class="container">
+		<label class="switch">
+			<input type="checkbox" onclick="dark()">
+			<span class="slider round"></span>
+		  </label>
 
-		<input type="text" class="js-userinput container-textinput" placeholder="Search!" id="inputtext" value="" />
+		 <div class="inputpanel">
+			
+			<div class="wrapper">
+				
+				<input class="search" type="text" class="js-userinput container-textinput" placeholder="Search!" id="inputtext" value="" />
+				<input class="submit" type="submit" onclick="giphy()" />
+				
+			</div>
+		</div>
 
-		
+		<div class="searchheader">
+			
+			<p  id="demo"></p>
 
+		</div>
+		<div class="searchresult">
+			
+			<div class="row"> 
+  				<div class="img"></div>
+			</div>
+		</div>
+				
 
-	</div>
-
-	<p  id="demo"></p>
-	<script type="text/javascript" src="Main.JS"></script>
-
+						
+	<script type="text/javascript" src="main.JS"></script>
 </body>
 </html>
